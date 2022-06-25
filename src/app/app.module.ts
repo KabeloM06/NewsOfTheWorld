@@ -7,17 +7,21 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticlesComponent } from './components/articles/articles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
