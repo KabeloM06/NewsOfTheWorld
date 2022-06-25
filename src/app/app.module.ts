@@ -9,12 +9,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { ArticleContainerComponent } from './components/article-container/article-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    ArticleContainerComponent
   ],
   imports: [
     BrowserModule,
