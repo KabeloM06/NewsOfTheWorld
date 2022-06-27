@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StoriesService } from 'src/app/services/stories.service';
+
 
 @Component({
   selector: 'app-articles',
@@ -8,16 +8,11 @@ import { StoriesService } from 'src/app/services/stories.service';
 })
 export class ArticlesComponent implements OnInit {
 
-  stories: any = [];
+  
 
-  constructor(private storiesService: StoriesService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.storiesService.getStories()
-    .subscribe((res: any)=>{
-      this.stories = res;
-      console.log(this.stories);
-    })
   }
 
 }
